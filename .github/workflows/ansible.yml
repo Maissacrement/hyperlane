@@ -22,7 +22,7 @@ jobs:
 
       - name: Run Ansible Syntax Check
         run: >
-          ansible-playbook --connection=local 127.0.0.1 --syntax-check hyperlane.yml --extra-vars "ansible_role_include_tasks=true"
+          ansible-playbook --connection=local -e "target=localhost" --syntax-check hyperlane.yml --extra-vars "ansible_role_include_tasks=true"
 
   lint:
     name: Ansible Lint
