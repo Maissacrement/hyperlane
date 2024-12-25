@@ -1,0 +1,5 @@
+validator_brand: 'polkachu'
+port_prefix: 100
+
+hyperplane_monorepo_path: "{{ lookup('env', 'MONOREPO_LOCATION') }}"
+user_directory: "/home/{{ ansible_user }}"

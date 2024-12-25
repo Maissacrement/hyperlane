@@ -7,6 +7,6 @@
     "type": "s3"
   },
   "chains": {
-    "test": {}
+    "test": null
   }
 }

@@ -14,7 +14,7 @@
 - name: Copy binary
   copy:
     remote_src: true
-    src: '{{ user_directory }}/hyperlane-monorepo/rust/target/release/validator'
+    src: "{{ hyperplane_monorepo_path }}/hyperlane-monorepo/rust/main/target/release/validator"
     dest: '{{ user_directory }}/.{{chain}}/hyperlane_validator'
     mode: '0775'
 

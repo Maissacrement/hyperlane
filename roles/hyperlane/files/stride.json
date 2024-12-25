@@ -9,45 +9,67 @@
   "interval": 5,
   "chains": {
     "stride": {
-      "name": "stride",
-      "domainId": 745,
-      "chainId": "stride-1",
-      "protocol": "cosmos",
-      "canonicalAsset": "ustrd",
       "bech32Prefix": "stride",
+      "blockExplorers": [
+        {
+          "apiUrl": "https://apis.mintscan.io/v1/stride",
+          "family": "other",
+          "name": "Mintscan",
+          "url": "https://www.mintscan.io/stride"
+        }
+      ],
+      "blocks": {
+        "confirmations": 1,
+        "estimateBlockTime": 5,
+        "reorgPeriod": 1
+      },
+      "chainId": "stride-1",
+      "deployer": {
+        "name": "Stride Labs",
+        "url": "https://www.stride.zone"
+      },
+      "displayName": "Stride",
+      "domainId": 745,
+      "gasCurrencyCoinGeckoId": "stride",
+      "grpcUrls": [
+        {
+          "http": "https://stride-grpc.publicnode.com:443"
+        }
+      ],
+      "isTestnet": false,
+      "name": "stride",
+      "nativeToken": {
+        "decimals": 6,
+        "denom": "ustrd",
+        "name": "Stride",
+        "symbol": "STRD"
+      },
+      "protocol": "cosmos",
+      "restUrls": [
+        {
+          "http": "https://stride-api.polkachu.com"
+        }
+      ],
       "rpcUrls": [
         {
           "http": "https://stride-rpc.polkachu.com"
         }
       ],
-      "grpcUrls": [
-        {
-          "http": "http://stride-grpc.polkachu.com:12290"
-        }
-      ],
-      "grpcUrl": "http://stride-grpc.polkachu.com:12290",
+      "slip44": 118,
+      "interchainGasPaymaster": "0x602D5BF31F85FE90BF812A5EE6E2CC8CF6998A687125CABEDD120983CB88DA54",
+      "mailbox": "0x89945750e089d84581f194e1947a58480b335f18386ad4f761f05feebf5e2454",
+      "merkleTreeHook": "0x7ab4a8c3ba5371e34cd8d5dc584e0d924504fc21c3cbf41c3f64d436176bf007",
+      "validatorAnnounce": "0xf57d954bf3ddb5f1032a0e020a99e931215cf83ceb4de987c781488065aaae0d",
       "gasPrice": {
-        "amount": "0.025",
-        "denom": "ustrd"
+        "denom": "ustrd",
+        "amount": "0.005"
       },
+      "canonicalAsset": "ustrd",
       "contractAddressBytes": 32,
       "index": {
-        "from": 8686128,
-        "chunk": 10000
-      },
-      "blocks": {
-        "confirmations": 1,
-        "estimatedBlockTime": 5,
-        "reorgPeriod": 1
-      },
-      "signer": {
-        "type": "cosmosKey",
-        "prefix": "stride"
-      },
-      "mailbox": "0x89945750e089d84581f194e1947a58480b335f18386ad4f761f05feebf5e2454",
-      "validatorAnnounce": "0xf57d954bf3ddb5f1032a0e020a99e931215cf83ceb4de987c781488065aaae0d",
-      "interchainGasPaymaster": "0x89f21bd61e9a38be1c8cff5a5b5c78433c22d554cb4247499ce4e761821685ed",
-      "merkleTreeHook": "0x7ab4a8c3ba5371e34cd8d5dc584e0d924504fc21c3cbf41c3f64d436176bf007"
+        "from": 9152000,
+        "chunk": 5
+      }
     }
   }
 }

@@ -1,3 +1,6 @@
+.env
+.vscode
 inventory.ini
+inventory.yml
 inventory
 playground/

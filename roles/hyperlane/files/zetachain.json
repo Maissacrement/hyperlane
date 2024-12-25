@@ -23,17 +23,24 @@
         "reorgPeriod": 0
       },
       "chainId": 7000,
+      "deployer": {
+        "name": "Abacus Works",
+        "url": "https://www.hyperlane.xyz"
+      },
       "displayName": "ZetaChain",
       "domainId": 7000,
       "domainRoutingIsm": "0xaDc0cB48E8DB81855A930C0C1165ea3dCe4Ba5C7",
       "domainRoutingIsmFactory": "0x1052eF3419f26Bec74Ed7CEf4a4FA6812Bc09908",
       "fallbackRoutingHook": "0x8F1E22d309baa69D398a03cc88E9b46037e988AA",
       "gasCurrencyCoinGeckoId": "zetachain",
+      "gnosisSafeTransactionServiceUrl": "https://transaction.safe.zetachain.com",
       "index": {
         "from": 3068132
       },
+      "interchainAccountIsm": "0x2b6d3F7d28B5EC8C3C028fBCAdcf774D9709Dd29",
+      "interchainAccountRouter": "0x3AdCBc94ab8C48EC52D06dc65Bb787fD1981E3d5",
       "interchainGasPaymaster": "0x931dFCc8c1141D6F532FD023bd87DAe0080c835d",
-      "interchainSecurityModule": "0x8fB4297373f1f11032856693Cf6eee5eC8d7FF4F",
+      "interchainSecurityModule": "0x0c979c68c88459F6b4cCfEc73B6d6Ac262f7159e",
       "mailbox": "0x2f2aFaE1139Ce54feFC03593FeE8AB2aDF4a85A7",
       "merkleTreeHook": "0xE2ee936bEa8e42671c400aC96dE198E06F2bA2A6",
       "name": "zetachain",
@@ -49,7 +56,10 @@
       "proxyAdmin": "0x0761b0827849abbf7b0cC09CE14e1C93D87f5004",
       "rpcUrls": [
         {
-          "http": "https://zetachainevm-rpc.polkachu.com"
+          "http": "https://zetachain-evm.blockpi.network/v1/rpc/public"
+        },
+        {
+          "http": "https://zetachain-mainnet.g.allthatnode.com/archive/evm"
         }
       ],
       "staticAggregationHookFactory": "0xEb9FcFDC9EfDC17c1EC5E1dc085B98485da213D6",
@@ -59,7 +69,11 @@
       "staticMessageIdMultisigIsmFactory": "0x8b83fefd896fAa52057798f6426E9f0B080FCCcE",
       "storageGasOracle": "0xC9B8ea6230d6687a4b13fD3C0b8f0Ec607B26465",
       "testRecipient": "0x12582c7B0f43c6A667CBaA7fA8b112F7fb1E69F0",
-      "validatorAnnounce": "0x48083C69f5a42c6B69ABbAd48AE195BD36770ee2"
+      "timelockController": "0x0000000000000000000000000000000000000000",
+      "validatorAnnounce": "0x48083C69f5a42c6B69ABbAd48AE195BD36770ee2",
+      "staticMerkleRootWeightedMultisigIsmFactory": "0xF645AeA0b8D26c9DBdfdeF2DEe59F845715BE32F",
+      "staticMessageIdWeightedMultisigIsmFactory": "0x0ed553e7e5D55535457d1E778Ba96cF839c18442",
+      "technicalStack": "other"
     }
   }
 }

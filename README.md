@@ -20,7 +20,7 @@
 First, copy the sample inventory file to your own inventory file so you can customize it to suit your needs:
 
 ```bash
-cp inventory.sample inventory.ini
+cp inventory.sample inventory.yml
 ```
 
 The script assumes the following:
@@ -37,5 +37,5 @@ Overall, this script is rather straightforward because much of the complexity ha
 Once you have customized the inventory file, you run one playbook to set up a hyperlane deployment, plus manual interventions to finish off the private sensitive info directly on the server.
 
 ```bash
-ansible-playbook hyperlane.yml -e "target=osmosis"
+ansible-playbook hyperlane.yml -e "target=all" -e "chain=osmosis"
 ```

@@ -3,10 +3,10 @@ Description=hyperlane {{ chain }}
 After=network-online.target
 
 [Service]
-User=ubuntu
-WorkingDirectory=/home/ubuntu/.{{ chain }}
-EnvironmentFile=/home/ubuntu/.{{ chain }}/.env
-ExecStart=/home/ubuntu/.{{ chain }}/hyperlane_validator --metrics-port {{ port_prefix }}90
+User={{ ansible_user }}
+WorkingDirectory={{ user_directory }}/.{{ chain }}
+EnvironmentFile={{ user_directory }}/.{{ chain }}/.env
+ExecStart={{ user_directory }}/.{{ chain }}/hyperlane_validator --metrics-port {{ port_prefix }}90
 Restart=always
 RestartSec=3
 LimitNOFILE=4096
